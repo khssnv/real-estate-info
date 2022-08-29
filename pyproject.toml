@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "real-estate-info"
+version = "0.1.0"
+description = ""
+authors = ["Alisher A. Khassanov <a.khssnv@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.4.3"
+numpy = "^1.23.2"
+fastapi = "^0.81.0"
+uvicorn = { extras = ["standard"], version = "^0.18.3" }
+loguru = "^0.6.0"
+sodapy = "^2.1.1"
+requests-cache = "^0.9.6"
+exceptiongroup = "^1.0.0-rc.9"
+fastapi-cache2 = "^0.1.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipython = "^8.4.0"
+jupyterlab = "^3.4.5"
+notebook = "^6.4.12"
+matplotlib = "^3.5.3"
+black = "^22.6.0"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+pylint = "^2.15.0"
+pre-commit = "^2.20.0"
+python-dotenv = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
